@@ -1,0 +1,19 @@
+* {
+    background-color: black;
+}
+
+img{
+    border: 5px solid white;
+    width: 100%
+    
+
+}
+
+div{
+    width:50%;
+    margin-left:25%;
+    color:white;
+    text-align: center;
+    font-size: 50;
+
+}
