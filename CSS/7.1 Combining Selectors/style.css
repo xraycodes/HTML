@@ -1,0 +1,24 @@
+/* Write your code here: */
+h1,h2 {
+    color:blueviolet
+}
+
+/* one level deep */
+.box > p {  
+    color:firebrick
+}
+
+/* Ancestor and its descent.. descendent selector */
+.box .li {
+    color: blue;
+}
+
+/* Chaining methods using no space */
+li.done{
+    color:seagreen;
+}
+
+/* Combining everything  */
+ul p.done{
+    font-size: 0.5rem;
+}
