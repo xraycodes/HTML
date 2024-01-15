@@ -1,0 +1,28 @@
+.apple-watch{
+    width: 30%;
+
+}
+.custom {
+    background-color: black;
+}
+
+.box{
+    width: 50%
+}
+
+.iphone{
+    height: 450px;
+    width: 80%;
+    float:right;
+    margin-top: 100px;
+
+}
+
+.macbook {
+    width: 450px;
+    height: 350px;
+}
+
+.text {
+    color: white;
+}
