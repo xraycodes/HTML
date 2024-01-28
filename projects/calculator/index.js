@@ -1,4 +1,5 @@
 let output = ""
+let tempResult = ''
 
 
 const answer = document.querySelector(".answer")
@@ -13,11 +14,21 @@ clear.addEventListener("click", ()=>{
     answer.textContent = output
 })
 
-for (let i=0; i < numbers.length; i++) {
-    console.log(typeof(Number(document.querySelector(`.${numbers[i]}`).textContent)))
-    console.log(answer.textContent)
-    document.querySelector(`.${numbers[i]}`).addEventListener("click", ()=>{
-        let result = Number(answer.textContent) + Number(document.querySelector(`.${numbers[i]}`).textContent)
-        answer.textContent = result
+// for (let i=0; i < numbers.length; i++) {
+//     console.log(typeof(Number(document.querySelector(`.${numbers[i]}`).textContent)))
+//     console.log(answer.textContent)
+//     document.querySelector(`.${numbers[i]}`).addEventListener("click", ()=>{
+//         let result = Number(document.querySelector(`.${numbers[i]}`).textContent)
+//         answer.textContent = result
+//     })
+// }
+
+    for (let i=0; i < numbers.length; i++) {
+        document.querySelector(`.${numbers[i]}`).addEventListener("click", ()=>{
+
+            let selection = document.querySelector(`.${numbers[i]}`).textContent
+            console.log("this is  temp result " + tempResult)
+            console.log("this is selection " + selection)
+            console.log("this is result" + tempResult + selection)
     })
 }
