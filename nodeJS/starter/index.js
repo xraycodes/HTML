@@ -11,10 +11,10 @@ const { toUnicode } = require('punycode');
 ///// FILES
 
 //Blocking, synchronous way
-
 // To read files
 // const textIn = fs.readFileSync('./txt/final.txt', 'utf-8');
 // console.log(textIn);
+
 //To write files
 // const textOut = `This is what we know about the avocado: ${textIn}.\nCreated on ${Date.now()}`
 // fs.writeFileSync('./txt/output.txt', textOut)
@@ -27,7 +27,16 @@ const { toUnicode } = require('punycode');
 // })
 // console.log("Will read file!")
 
+//mkdir(asynchronous task)  making directory if it doesnt exist.. fs.existsSync is available to check if directory exists or not
+// fs.mkdir('./assets', (err) => {
+    // if (err) {console.log(err)} 
+    // console.log('folder created')
+// })
+
+//fs.rmdir is to remove directory
 ////// Server
+
+//deleting files.. using fs.existsSync
 
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');    
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');    
